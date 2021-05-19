@@ -1,7 +1,8 @@
+import React from 'react'
 import Link from 'next/link'
 import styles from '@/styles/Header.module.css'
 
-export default function Header() {
+const Header: React.FC = () => {
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
@@ -22,3 +23,5 @@ export default function Header() {
     </header>
   )
 }
+
+export default Header

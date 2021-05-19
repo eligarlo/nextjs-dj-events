@@ -1,6 +1,7 @@
+import React from 'react'
 import styles from '@/styles/Showcase.module.css'
 
-export default function Showcase() {
+const Showcase: React.FC = () => {
   return (
     <div className={styles.showcase}>
       <h1>Welcome To The Party!</h1>
@@ -8,3 +9,5 @@ export default function Showcase() {
     </div>
   )
 }
+
+export default Showcase

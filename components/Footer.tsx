@@ -1,18 +1,20 @@
+import React from 'react'
 import Link from 'next/link'
 import styles from '@/styles/Footer.module.css'
 
-export default function Footer() {
-  const currentYear = () => {
-    const d = new Date()
-    return d.getFullYear()
-  }
+interface Props {
+  currentYear: number
+}
 
+const Footer: React.FC<Props> = ({ currentYear }) => {
   return (
     <footer className={styles.footer}>
-      <p>Copyright &copy; DJ Events {currentYear()}</p>
+      <p>Copyright &copy; DJ Events {currentYear}</p>
       <p>
         <Link href='/about'>About This Project</Link>
       </p>
     </footer>
   )
 }
+
+export default Footer

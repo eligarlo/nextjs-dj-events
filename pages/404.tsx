@@ -1,9 +1,10 @@
+import React from 'react'
 import { FaExclamationTriangle } from 'react-icons/fa'
 import Link from 'next/link'
 import Layout from '@/components/Layout'
 import styles from '@/styles/404.module.css'
 
-export default function NotFoundPage() {
+const NotFoundPage: React.FC = () => {
   return (
     <Layout title='Page Not Found'>
       <div className={styles.error}>
@@ -17,3 +18,5 @@ export default function NotFoundPage() {
     </Layout>
   )
 }
+
+export default NotFoundPage

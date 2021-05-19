@@ -1,6 +1,7 @@
+import React from 'react'
 import Layout from '@/components/Layout'
 
-export default function AboutPage() {
+const AboutPage: React.FC = () => {
   return (
     <Layout title='About DJ Events'>
       <h1>About</h1>
@@ -9,3 +10,5 @@ export default function AboutPage() {
     </Layout>
   )
 }
+
+export default AboutPage
